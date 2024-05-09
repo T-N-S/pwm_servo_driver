@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "l298n_driver"
+name = "pwm_servo_driver"
 version = "0.1.0"
 authors = [
   { name="Tim Schumann", email="gerb008701@gmail.com" },
 ]
-description = "Python interface for l298n h-bridge motor driver"
+description = "Python interface for PWM servo driver"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://github.com/T-N-S/l298n_driver"
+Homepage = "https://github.com/T-N-S/pwm_servo_driver"

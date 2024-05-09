@@ -15,14 +15,14 @@ pip install sx1509-gpio-expander
 Install the package using pip:
 
 ```sh
-pip install pwm_servo_driver
+pip install pwm-servo-driver
 ```
 
 ## Usage
 
 ```python
 from sx1509_gpio_expander import SX1509
-from pwm_servo_driver import PWM
+from pwm_servo_driver import Servo
 import board
 
 # Configure I2C
@@ -33,7 +33,7 @@ IOExpander0 = SX1509.SX1509(i2c, 0x3F)
 
 # Create an instance of the PWM servo driver
 # The parameters are the IO expander, and the pin number for the servo
-servo = PWM.PWM(IOExpander0, 1)
+servo = Servo.Servo(IOExpander0, 1)
 
 # Use the servo driver
 # The setPosition function sets the servo angle

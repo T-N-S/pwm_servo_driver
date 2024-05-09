@@ -1,16 +1,16 @@
 """
-Python interface for PWM servo controller
+Python interface for PWM servo driver
 This library provides an interface to control a servo using Pulse Width Modulation (PWM).
 """
 
-import pwm_servo_controller.IO_Types as IO_Types
+import pwm_servo_driver.IO_Types as IO_Types
 
-class PWM:
+class Servo:
 
     
     def __init__(self, IOExpaner, servoPin):
         """
-        Constructor for the PWM class.
+        Constructor for the Servo class.
         
         :param IOExpaner: An instance of the IO expander class.
         :param servoPin: The pin number for the servo.
